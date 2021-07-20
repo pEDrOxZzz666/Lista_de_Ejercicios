@@ -1,5 +1,9 @@
-<h2>{{ejercicio.name}}</h2>
-<div>id: <span>{{ejercicio.id}}</span></div>
-<div>name: <span>{{ejercicio.name}}</span></div>
+<h2>Listado de Ejercicios</h2>
+
+<ul class="ejercicios">
+  <li *ngFor="let ejercicio of ejercicios">
+    <span class="ejercicio">{{ ejercicio.id }}</span> {{ejercicio.name}}
+  </li>
+</ul>
 
 
