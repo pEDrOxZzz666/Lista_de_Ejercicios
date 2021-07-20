@@ -11,10 +11,16 @@ export class EjerciciosComponent implements OnInit {
 
   ejercicios = EJERCICIOS;
 
+  ejercicioSeleccionado?:Ejercicio;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelectEjercicio(ejercicio:Ejercicio):void {
+    console.log("Ejercicio seleccionado = " + ejercicio.id);
+    this.ejercicioSeleccionado = ejercicio;
   }
 
 }
